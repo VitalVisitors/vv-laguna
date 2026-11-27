@@ -414,7 +414,7 @@ function startChorus() {
   // Real chorus audio if the file exists, otherwise a recreated one
   const au = new Audio(); au.preload = "auto"; au.volume = CHORUS_VOLUME;
   let decided = false;
-  const SAMPLE = {"order": ["Lesser Goldfinch", "Woodhouse's Scrub-Jay", "Western Meadowlark", "Spotted Towhee", "House Finch"], "clip_sec": 4, "caption": "Sample · birds to expect at Laguna Rainbow", "note": "Sample birdsong, not recorded at Laguna Rainbow. These are birds from your area that you can expect to hear once your unit arrives. Recordings: Tero Linjama, Steve Taylor, Cecelia Alexander, Elliott Gordon, via iNaturalist (CC BY 4.0 and CC0); trimmed and levelled."};
+  const SAMPLE = {"order": ["Lesser Goldfinch", "Woodhouse's Scrub-Jay", "Western Meadowlark", "Spotted Towhee", "House Finch"], "clip_sec": 4, "caption": "Sample · birds to expect at Laguna Rainbow once your unit arrives", "note": "Sample birdsong, not recorded at Laguna Rainbow. These are birds from your area that you can expect to hear once your unit arrives. Recordings: Tero Linjama, Steve Taylor, Cecelia Alexander, Elliott Gordon, via iNaturalist (CC BY 4.0 and CC0); trimmed and levelled."};
   const useSynth = () => {
     if (decided || stopped) return; decided = true;
     let settled = false;
