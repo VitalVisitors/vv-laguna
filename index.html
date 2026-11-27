@@ -161,6 +161,7 @@ h1 { font-family: var(--display); font-weight: 800; font-size: clamp(34px, 5.5vw
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #17120e; --panel: #221b15; --fg: #f0e8de; --muted: #b9aa98; --pine: #dba172; --line: #3a2f26; } }
 :root[data-theme="dark"] { --bg: #17120e; --panel: #221b15; --fg: #f0e8de; --muted: #b9aa98; --pine: #dba172; --line: #3a2f26; }
 .tile:disabled { cursor: default; } .tile:disabled .paint { filter: grayscale(.6) brightness(.75); } .tile:disabled .playmark { display: none; }
+.music-part:has(#musicCredit:empty){display:none}
 </style>
 
 <div id="home" class="screen">
@@ -209,7 +210,7 @@ h1 { font-family: var(--display); font-weight: 800; font-size: clamp(34px, 5.5vw
   <div class="drawing" id="drawing" hidden><img id="drawingImg" alt="Hand-drawn illustration of today's birds"></div>
   <div class="gallery" id="gallery"></div>
   <div class="today-sum" id="todayNote">Sample day shown.</div>
-  <div class="music-credit">Bird art: <i>Fugleramme</i> by Arne Giacomo Munthe-Kaas, from plates by J. J. Audubon, L. A. Fuertes and others (CC BY-SA 4.0) · Music: <span id="musicCredit">Vivaldi, “Spring,” John Harrison, violin, Wichita State University Chamber Players (CC BY-SA)</span></div>
+  <div class="music-credit">Bird art: <i>Fugleramme</i> by Arne Giacomo Munthe-Kaas, from plates by J. J. Audubon, L. A. Fuertes and others (CC BY-SA 4.0)<span class="music-part"> · Music: <span id="musicCredit"></span></span></div>
 </div>
 
 <script>
