@@ -1,9 +1,8 @@
 {
- "date": "2026-11-27",
- "sunrise": "06:55",
+ "date": "2026-11-28",
+ "sunrise": "06:56",
  "frames": 24,
  "times": [
-  "06:16",
   "06:21",
   "06:26",
   "06:31",
@@ -26,8 +25,10 @@
   "07:56",
   "08:01",
   "08:06",
-  "08:11"
+  "08:11",
+  "08:16"
  ],
  "place": "Interstate 40 east of Laguna",
- "source": "New Mexico Department of Transportation road camera, I-40 at NM 6"
+ "source": "New Mexico Department of Transportation road camera, I-40 at NM 6",
+ "credit": "New Mexico Department of Transportation"
 }
